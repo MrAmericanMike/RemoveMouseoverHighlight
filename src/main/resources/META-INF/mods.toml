@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/MrAmericanMike/RemoveMouseoverHighlight/issues"
+[[mods]]
+modId="rmh"
+version="${file.jarVersion}"
+displayName="Remove Mouseover Highlight"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/remove-mouseover-highlight"
+logoFile="logo.png"
+credits="Remove Mouseover Highlight by MrAmericanMike"
+authors="MrAmericanMike"
+description='''
+Remove Mouseover Highlight
+by MrAmericanMike
+'''
