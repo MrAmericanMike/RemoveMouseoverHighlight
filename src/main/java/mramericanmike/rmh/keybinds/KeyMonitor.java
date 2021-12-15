@@ -14,7 +14,7 @@ public final class KeyMonitor {
 	@SubscribeEvent
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		Minecraft minecraft = Minecraft.getInstance();
-		if(minecraft.screen == null && MyKeyBindings.rmh.isDown()){
+		if(minecraft.level != null && minecraft.screen == null && MyKeyBindings.rmh.isDown()){
 			RemoveHighlight.setDoRemove(!RemoveHighlight.isDoRemove());
 		}
 	}
