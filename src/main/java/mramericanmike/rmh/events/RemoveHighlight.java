@@ -10,10 +10,7 @@ public class RemoveHighlight {
 
 	@SubscribeEvent
 	public static void removeHighlight(final DrawSelectionEvent event) {
-		if(isDoRemove() && ModConfigs.USE_KEY.get()) {
-			event.setCanceled(true);
-		}
-		if(isDoRemove() && !ModConfigs.USE_KEY.get()) {
+		if(isDoRemove()) {
 			event.setCanceled(true);
 		}
 	}
