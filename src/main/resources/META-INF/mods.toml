@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[38,)"
-license="All rights reserved"
+license="LGPL-3"
 issueTrackerURL="https://github.com/MrAmericanMike/RemoveMouseoverHighlight/issues"
 [[mods]]
 modId="rmh"
@@ -14,3 +14,15 @@ description='''
 Remove Mouseover Highlight
 by MrAmericanMike
 '''
+[[dependencies.rmh]]
+    modId="forge"
+    mandatory=true
+    versionRange="[38,)"
+    ordering="NONE"
+    side="CLIENT"
+[[dependencies.rmh]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"

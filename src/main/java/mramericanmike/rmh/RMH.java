@@ -21,7 +21,6 @@ public class RMH
         ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class, () -> new IExtensionPoint.DisplayTest(() -> NetworkConstants.IGNORESERVERONLY, (a, b) -> true));
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        //MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void clientSetup(final FMLClientSetupEvent event)

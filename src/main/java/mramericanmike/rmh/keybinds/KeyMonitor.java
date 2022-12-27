@@ -13,7 +13,9 @@ public final class KeyMonitor {
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		Minecraft minecraft = Minecraft.getInstance();
 		if(minecraft.level != null && minecraft.screen == null && MyKeyMappings.rmh.isDown()){
-			RemoveHighlight.setDoRemove(!RemoveHighlight.isDoRemove());
+			if(ModConfigs.USE_KEY.get()) {
+				RemoveHighlight.setDoRemove(!RemoveHighlight.isDoRemove());
+			}
 		}
 	}
 }
