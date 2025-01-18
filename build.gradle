@@ -1,0 +1,23 @@
+plugins {
+    id 'fabric-loom' version '1.8-SNAPSHOT' apply false
+    id 'net.neoforged.moddev' version '2.0.62-beta' apply false
+}
+
+
+//project.ext {
+//    mod_issues_url = 'https://github.com/MrAmericanMike/RemoveMouseoverHighlight/issues'
+//    mod_display_url = 'https://www.curseforge.com/minecraft/mc-mods/remove-mouseover-highlight'
+//}
+
+//
+//processResources {
+//    var moreProps = [
+//            'mod_issues_url'   : project.findProperty('mod_issues_url') ?: '',
+//            'mod_display_url' : project.findProperty('mod_display_url') ?: ''
+//    ]
+//
+//    filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {
+//        expand(moreProps)
+//    }
+//    inputs.properties(moreProps)
+//}
