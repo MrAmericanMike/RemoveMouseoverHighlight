@@ -9,11 +9,11 @@
     ],
     "clientOnly": true,
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "${mod_display_url}",
+        "sources": "${mod_source_url}"
     },
     "license": "${license}",
-    "icon": "logo.png",
+    "icon": "${mod_logo_file}",
     "environment": "*",
     "entrypoints": {
         "client": [
@@ -30,4 +30,3 @@
         "another-mod": "*"
     }
 }
-  
