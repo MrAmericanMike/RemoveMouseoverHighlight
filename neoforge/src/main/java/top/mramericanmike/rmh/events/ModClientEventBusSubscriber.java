@@ -6,14 +6,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import top.mramericanmike.rmh.Constants;
 import top.mramericanmike.rmh.keybinds.MyKeyMappings;
-import top.mramericanmike.rmh.setup.ModConfigs;
 
 @EventBusSubscriber(modid = Constants.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class ModClientEventBusSubscriber {
     @SubscribeEvent
     public static void onKeyRegister(RegisterKeyMappingsEvent event){
-        if(ModConfigs.USE_KEY.get()){
-            event.register(MyKeyMappings.RMH.get());
-        }
+        event.register(MyKeyMappings.RMH.get());
     }
 }

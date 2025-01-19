@@ -1,3 +1,6 @@
+### 1.1.2
+* As per recommendations the key binds are always registered. They will be ignored if use key toggle is false
+
 ### 1.1.1
 * Code cleanup
 * Added Homepage and Sources links to Fabric fabric.mod.json file

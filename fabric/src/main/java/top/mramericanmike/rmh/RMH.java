@@ -16,9 +16,8 @@ public class RMH implements ClientModInitializer{
     public void onInitializeClient() {
         ModConfigs.register();
         RenderOutline.setDoRender(!ModConfigs.default_state);
-        if(ModConfigs.use_key_toggle){
-            KeyInputHandler.registerKeys();
-        }
+        KeyInputHandler.registerKeys();
+
         WorldRenderEvents.BEFORE_BLOCK_OUTLINE.register((worldRenderContext, hitResult) -> {
             if (hitResult != null && hitResult.getType().equals(HitResult.Type.BLOCK)) {
                 BlockHitResult bhr = (BlockHitResult) hitResult;

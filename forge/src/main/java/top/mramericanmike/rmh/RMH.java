@@ -15,6 +15,5 @@ public class RMH {
     public RMH(FMLJavaModLoadingContext context) {
         context.registerConfig(ModConfig.Type.CLIENT, ModConfigs.SPEC, "RemoveMouseoverHighlight-client.toml");
         context.registerExtensionPoint(IExtensionPoint.DisplayTest.class, () -> new IExtensionPoint.DisplayTest(() -> IGNORESERVERONLY, (a, b) -> true));
-        MinecraftForge.EVENT_BUS.register(ModClientEventBusSubscriber.class);
     }
 }
