@@ -1,5 +1,7 @@
 ### 1.1.2
 * As per recommendations the key binds are always registered. They will be ignored if use key toggle is false
+* Bumped NeoForge version to 21.4.67-beta
+* Unified configuration files to be names equally and all lowercase
 
 ### 1.1.1
 * Code cleanup

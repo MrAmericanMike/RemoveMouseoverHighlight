@@ -33,7 +33,7 @@ public class ModClientForgeEvents {
     }
 
     @SubscribeEvent
-    public static void onClientTick(ClientTickEvent.Post event) {
+    public static void onClientTick(ClientTickEvent.Pre event) {
         if(ModConfigs.USE_KEY.get()){
             while (MyKeyMappings.RMH.get().consumeClick()) {
                 setDoRemove(!isDoRemove());

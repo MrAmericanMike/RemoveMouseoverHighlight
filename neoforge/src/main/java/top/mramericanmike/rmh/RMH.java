@@ -11,6 +11,6 @@ import top.mramericanmike.rmh.setup.ModConfigs;
 public class RMH {
 
     public RMH(FMLModContainer container, IEventBus iEventBus, Dist dist) {
-        container.registerConfig(ModConfig.Type.CLIENT, ModConfigs.SPEC, "RemoveMouseoverHighlight-client.toml");
+        container.registerConfig(ModConfig.Type.CLIENT, ModConfigs.SPEC, Constants.MOD_CONFIGS_FILE_NAME + "-client.toml");
     }
 }

@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.util.Properties;
 
 public class ModConfigs {
-    private static final Path CONFIGS_PATH = FabricLoader.getInstance().getConfigDir().resolve("remove_mouseover_highlight.properties");
+    private static final Path CONFIGS_PATH = FabricLoader.getInstance().getConfigDir().resolve(Constants.MOD_CONFIGS_FILE_NAME + "-client.properties");
     private static final String DEFAULT_STATE_KEY = "default_state";
     private static final String USE_KEY_TOGGLE_KEY = "use_key_toggle";
     private static final String INVISIBLE_BARRIER_KEY = "invisible_barrier";
@@ -42,8 +42,8 @@ public class ModConfigs {
     }
 
     private static void saveProperties(Properties properties) {
-        properties.setProperty(DEFAULT_STATE_KEY, Boolean.toString(default_state));
         properties.setProperty(USE_KEY_TOGGLE_KEY, Boolean.toString(use_key_toggle));
+        properties.setProperty(DEFAULT_STATE_KEY, Boolean.toString(default_state));
         properties.setProperty(INVISIBLE_BARRIER_KEY, Boolean.toString(invisible_barrier));
         try {
             properties.store(Files.newOutputStream(CONFIGS_PATH), "Configuration file");
