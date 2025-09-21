@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${description}",
+	"authors": [
+		"${mod_author}"
+	],
+	"contact": {
+		"homepage": "${mod_display_url}",
+		"sources": "${mod_source_url}"
+	},
+	"license": "${license}",
+	"icon": "${mod_logo_file}",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"top.mramericanmike.rmh.RMH"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${fabric_loader_version}",
+		"fabric-api": "*",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=${java_version}"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
