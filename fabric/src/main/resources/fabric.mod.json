@@ -14,7 +14,7 @@
     },
     "license": "${license}",
     "icon": "${mod_logo_file}",
-    "environment": "*",
+    "environment": "client",
     "entrypoints": {
         "client": [
             "top.mramericanmike.rmh.RMH"

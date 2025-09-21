@@ -1,3 +1,6 @@
+### 1.1.3
+* Fixes on fabric.mod.json and cleanup on mods.toml and neoforge.mods.toml
+
 ### 1.1.2
 * As per recommendations the key binds are always registered. They will be ignored if use key toggle is false
 * Bumped NeoForge version to 21.4.67-beta
